@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7DD27F25-BAD2-4B95-AFE4-877133EA5F9F}</ProjectGuid>
+    <ProjectGuid>{15BA3FEA-B447-4EEB-B67B-249FA88F7BA1}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ASP.NET_Labb1</RootNamespace>
-    <AssemblyName>ASP.NET Labb1</AssemblyName>
+    <RootNamespace>Föreläsning1</RootNamespace>
+    <AssemblyName>Föreläsning1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -78,10 +78,6 @@
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
@@ -168,13 +164,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LaserController.cs" />
-    <Compile Include="Controllers\LifeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\SellController.cs" />
-    <Compile Include="Controllers\SupermanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,23 +230,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Superman\DoGood.cshtml" />
-    <Content Include="Views\Company\EcUtbildning.cshtml" />
-    <Content Include="Views\Company\Ericsson.cshtml" />
-    <Content Include="Views\Company\Volvo.cshtml" />
-    <Content Include="Views\Company\Index.cshtml" />
-    <Content Include="Views\Sell\B2B.cshtml" />
-    <Content Include="Views\Sell\B2C.cshtml" />
-    <Content Include="Views\Sell\C2C.cshtml" />
-    <Content Include="Views\Sell\Completion.cshtml" />
-    <Content Include="Views\Life\SuperMario.cshtml" />
-    <Content Include="Views\Life\Health.cshtml" />
-    <Content Include="Views\Life\Live.cshtml" />
-    <Content Include="Views\Laser\Sabel.cshtml" />
-    <Content Include="Views\Laser\Pointer.cshtml" />
-    <Content Include="Views\Laser\Eye.cshtml" />
-    <Content Include="Views\Laser\Printer.cshtml" />
-    <Content Include="Views\Superman\DoEvil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,9 +258,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2769</DevelopmentServerPort>
+          <DevelopmentServerPort>9142</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2769/</IISUrl>
+          <IISUrl>http://localhost:9142/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

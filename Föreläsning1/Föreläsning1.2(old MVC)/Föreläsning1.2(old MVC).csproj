@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7DD27F25-BAD2-4B95-AFE4-877133EA5F9F}</ProjectGuid>
+    <ProjectGuid>{A606C9F9-1923-4B5D-AACB-8297DFE5F3F4}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ASP.NET_Labb1</RootNamespace>
-    <AssemblyName>ASP.NET Labb1</AssemblyName>
+    <RootNamespace>Föreläsning1._2_old_MVC_</RootNamespace>
+    <AssemblyName>Föreläsning1.2%28old MVC%29</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -168,13 +168,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LaserController.cs" />
-    <Compile Include="Controllers\LifeController.cs" />
+    <Compile Include="Controllers\ImagesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\SellController.cs" />
-    <Compile Include="Controllers\SupermanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,23 +235,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Superman\DoGood.cshtml" />
-    <Content Include="Views\Company\EcUtbildning.cshtml" />
-    <Content Include="Views\Company\Ericsson.cshtml" />
-    <Content Include="Views\Company\Volvo.cshtml" />
-    <Content Include="Views\Company\Index.cshtml" />
-    <Content Include="Views\Sell\B2B.cshtml" />
-    <Content Include="Views\Sell\B2C.cshtml" />
-    <Content Include="Views\Sell\C2C.cshtml" />
-    <Content Include="Views\Sell\Completion.cshtml" />
-    <Content Include="Views\Life\SuperMario.cshtml" />
-    <Content Include="Views\Life\Health.cshtml" />
-    <Content Include="Views\Life\Live.cshtml" />
-    <Content Include="Views\Laser\Sabel.cshtml" />
-    <Content Include="Views\Laser\Pointer.cshtml" />
-    <Content Include="Views\Laser\Eye.cshtml" />
-    <Content Include="Views\Laser\Printer.cshtml" />
-    <Content Include="Views\Superman\DoEvil.cshtml" />
+    <Content Include="Views\Images\TopTen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,9 +264,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2769</DevelopmentServerPort>
+          <DevelopmentServerPort>2144</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2769/</IISUrl>
+          <IISUrl>http://localhost:2144/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

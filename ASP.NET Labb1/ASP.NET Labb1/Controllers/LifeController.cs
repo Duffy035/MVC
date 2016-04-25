@@ -9,8 +9,9 @@ namespace ASP.NET_Labb1.Controllers
     public class LifeController : Controller
     {
         // GET: Life
-        public ActionResult SuperMario()
+        public ActionResult SuperMario(object id) //object tar både siffror o värde
         {
+            ViewBag.MarioAmounts = "You have:" + id;
             return View();
         }
         public ActionResult Health()

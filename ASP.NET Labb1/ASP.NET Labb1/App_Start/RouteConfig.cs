@@ -32,7 +32,8 @@ namespace ASP.NET_Labb1
             routes.MapRoute(
             name: "LifeController",
             url: "Life/{action}/{id}",
-            defaults: new { controller = "Life", action = "SuperMario", id = UrlParameter.Optional }
+            defaults: new { controller = "Life", action = "SuperMario", id = UrlParameter.Optional },
+            constraints: new { id = @"\d+" }  //constraints example
         );
 
             //Uppgift6:
@@ -42,7 +43,6 @@ namespace ASP.NET_Labb1
             url: "Laser/{action}/{id}",
             defaults: new { controller = "Laser", action = "Sabel", id = UrlParameter.Optional }
         );
-
 
             routes.MapRoute(
                 name: "Default",

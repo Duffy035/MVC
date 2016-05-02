@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "BrumBrum";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BrumBrum</h2>
+@*Gör en foreach med en vektor*@
+
+@{
+    string[] array = new string[] {"VROOM", "BEEP-BEEP", "SCreeech!"};
+
+    foreach (var a in array)
+    {
+        <p>@a</p>
+    }
+}
+
+
+@*Med lite annan presentation*@
+<h2>BrumBrum</h2>
+
+@{
+    string[] cars = { "Volvo", "Audi", "Nissan", "Tesla", "Mazda" };
+    <ul>
+        @foreach (var car in cars)
+        {
+        <li>@car</li>
+        }
+    </ul>
+}

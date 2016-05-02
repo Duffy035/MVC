@@ -1,0 +1,12 @@
+﻿@model List<int>
+@{
+    ViewBag.Title = "OddNumbers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>OddNumbers</h2>
+@foreach (var num in Model)
+{
+    @*<p>@num</p>*@
+    <p>@Html.DisplayFor(m => num)</p>  //exakt samma som <p> ovan
+}

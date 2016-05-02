@@ -1,0 +1,13 @@
+﻿@model List<Föreläsning4___Övning2.Models.Abbreviation>
+@{
+    ViewBag.Title = "AbbrevationNoScaffolding";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AbbrevationNoScaffolding</h2>
+
+@foreach (var abbreviation in Model)
+{
+    <p>Abbrevation: @abbreviation.ShortOne</p>
+    <p>Description: @abbreviation.Description</p>
+}

@@ -1,0 +1,25 @@
+﻿@{ var speed = 280;}  @*//Tilldealr en variabel här och använder nedanför*@
+@{
+    ViewBag.Title = "Driver";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Driver</h2>
+<ul>
+    @for (int i = 100; i > 50; i -= 4)
+    {
+        <li>@i</li>
+    }
+</ul>
+<h3>if else</h3>
+
+@{
+    if (speed > 200) //vi börjar med C#
+    {
+        <p>Detta är en sportbil</p> //Och skriver ut i HTML
+    }
+    else //C#
+    {
+        <p>Detta är ett LGF-fordeon</p> //Utskrift i HTML
+    }
+}

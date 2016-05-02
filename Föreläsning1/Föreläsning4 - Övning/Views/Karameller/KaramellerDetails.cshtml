@@ -1,0 +1,23 @@
+﻿@model Föreläsning4___Övning.Models.Karameller
+@{
+    ViewBag.Title = "KaramellerDetails";
+}
+
+<h2>KaramellerDetails of @Model.Name</h2>
+
+<h3>Amount of Sort:</h3>
+<p>@Model.Amount</p>
+
+<h3>Color:</h3>
+<p>@Model.Color</p>
+
+<h3>Flavor:</h3>
+<p>@Model.Flavor</p>
+
+<h3>Distributor:</h3>
+<p>@Model.Distributor</p>
+
+<h3>Lull lull:</h3>
+<p>@(Model.Nisse ?? "No Description")</p> @*Bra att ha med!*@ 
+
+<p>Follow me at Twitter: @@myTwitterID</p>

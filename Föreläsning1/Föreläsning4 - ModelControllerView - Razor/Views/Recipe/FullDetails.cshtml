@@ -1,0 +1,24 @@
+﻿@model Föreläsning4___ModelControllerView___Razor.Models.RecipeDetailsModel
+@{
+    ViewBag.Title = "FullDetails";
+}
+
+<h2>FullDetails of @Model.Name</h2>
+<h3>Difficulty @Model.Difficulty</h3>
+
+
+<h3>Ingredients</h3>
+<p>
+    @(Model.Ingredients.Length < 20 ? Model.Ingredients : Model.Ingredients.Substring(0, 18) + "..."))
+</p>
+
+<h3>Cooking Time</h3>
+<p>@Model.CookingTime</p>
+
+
+<h3>Instructions</h3>
+<p>@Model.Instructions</p>
+
+
+
+

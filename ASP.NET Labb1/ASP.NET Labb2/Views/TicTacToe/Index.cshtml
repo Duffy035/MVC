@@ -1,0 +1,29 @@
+﻿@using System.Net.Mime
+@using ASP.NET_Labb2.Controllers
+@using ASP.NET_Labb2.Models
+@model ASP.NET_Labb2.Models.TicTacToeModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tic Tac Toe</h2>
+<form action="" method="POST">
+    <table>
+        @for (int i = 0; i <= Tiles.TileCordiantes.Count - 1; i += 3)
+        {
+            <tr>
+                @for (int y = i; y < i + 3; y++)
+                {
+                    <td>
+                        <input type="submit" class="ButtonClass" name="send" id="@Tiles.TileCordiantes[y].ID" value="@Tiles.TileCordiantes[y].sign"/>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+
+    <input type="submit" name="send" value="Reset Game"/>
+</form>
+
+<p>@ViewBag.Message</p>
+

@@ -124,12 +124,6 @@ namespace ASP.NET_Labb2.Models
             message = CheckForWinner('O');
             if (message.Length > 0)
                 return message;
-
-            message = CheckForWinner('O');
-            if (message.Length > 0)
-            {
-                return message;
-            }
             return message;
         }
         public static int RandomFreeSquare()
@@ -154,7 +148,5 @@ namespace ASP.NET_Labb2.Models
                 Tiles.TileCordiantes.Add(new Cordiante() {ID = i, sign = char.Parse(i.ToString()), DisableButton = false});
             }
         }
-
-
     }
 }

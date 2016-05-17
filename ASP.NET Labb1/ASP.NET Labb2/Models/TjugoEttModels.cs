@@ -30,9 +30,9 @@ namespace ASP.NET_Labb2.Models
             {
                 CurrentNumber += 2;
             }
-            else if (CurrentNumber > 10)
+            else if (CurrentNumber > 10 && CurrentNumber % 2 == 0)
             {
-                CurrentNumber++;
+                CurrentNumber += 2;
             }
             else
             {

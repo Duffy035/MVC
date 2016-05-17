@@ -21,9 +21,17 @@ namespace ASP.NET_Labb2.Controllers
         [HttpPost]
         public ActionResult Play(string buttonValue)
         {
-            int choice = int.Parse(Request["choice"]);
-            TjugoEttModels.CurrentNumber += choice;
-            ViewBag.result = TjugoEttModels.HandleGameResult();
+            try
+            {
+                int choice = int.Parse(Request["choice"]);
+                TjugoEttModels.CurrentNumber += choice;
+                ViewBag.result = TjugoEttModels.HandleGameResult();
+                return View();
+            }
+            catch (Exception)
+            {
+                ViewBag.result = "Choose a value!";
+            }
             return View();
         }
     }

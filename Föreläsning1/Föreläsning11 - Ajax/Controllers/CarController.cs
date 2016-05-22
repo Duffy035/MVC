@@ -19,7 +19,7 @@ namespace Föreläsning11___Ajax.Controllers
         public PartialViewResult _Create(int id)
         {
             Car car = new Car { PersonId = id };
-            return PartialView(viewName: "_Create", model: car);  //Skapar våra vyer här - höerklick, 'add view'. Sedan ksapat olika, Details, Create, baserat på vå klass Car
+            return PartialView(viewName: "_Create", model: car);  //Skapar våra vyer här - högerklick, 'add view'. Sedan skapat olika, Details, Create, baserat på vår klass Car
         }
         
         //del 3?
@@ -30,7 +30,7 @@ namespace Föreläsning11___Ajax.Controllers
         public PartialViewResult _Create2(int id)
         {
             Car car = new Car { PersonId = id };
-            return PartialView(viewName: "_Create2", model: car); //Skapar våra vyer här - höerklick, 'add view'
+            return PartialView(viewName: "_Create2", model: car); //Skapar våra vyer här - högerklick, 'add view'
         }
 
         //del 4 - För vår POST

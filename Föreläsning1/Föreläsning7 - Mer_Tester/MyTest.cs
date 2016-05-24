@@ -15,9 +15,9 @@ namespace Föreläsning7___Mer_Tester
             //Arrange
             var expected = 5;
             //Act
-            var acctual = Goofy.Add(3, 2);
+            var actual = Goofy.Add(3, 2);
             //Assert
-            Assert.AreEqual(expected, acctual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

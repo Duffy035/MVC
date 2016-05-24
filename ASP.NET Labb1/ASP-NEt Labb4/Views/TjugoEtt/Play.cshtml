@@ -1,0 +1,42 @@
+﻿@using ASP_NEt_Labb4.Models
+@model ASP_NEt_Labb4.Models.TjugoEttModels
+
+@{
+    ViewBag.Title = "Play";
+}
+
+<h2>Play</h2>
+
+@{<form>
+
+        <div id="result">Current number is: @TjugoEttModels.CurrentNumber</div>
+        @{
+            AjaxOptions ajaxOption = new AjaxOptions
+            {
+                UpdateTargetId = "result",
+                InsertionMode = InsertionMode.Replace
+            };
+        }
+      <p>
+          @Ajax.ActionLink(linkText: "1",
+              actionName: "NextTurn",
+              routeValues: new {buttonValue = 1},
+              ajaxOptions: ajaxOption
+              )
+      </p>
+
+      <p>
+          @Ajax.ActionLink(linkText: "2",
+              actionName: "NextTurn",
+              routeValues: new {buttonValue = 2},
+              ajaxOptions: ajaxOption
+              )
+      </p>
+
+      <h3><label id="ResultMessage"></label></h3>
+
+  </form>
+}
+@section Scripts {
+    @Scripts.Render("~/bundels/jqueryval")
+}

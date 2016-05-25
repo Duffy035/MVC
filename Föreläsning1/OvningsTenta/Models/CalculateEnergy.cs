@@ -14,5 +14,13 @@ namespace OvningsTenta.Models
             var energy = parsedMass*(Math.Pow(speedOfLight, 2));
             return energy;
         }
+
+        public double CalculateMassNegative(string mass)
+        {
+            double parsedMass = double.Parse(mass);
+            double speedOfLight = 299792458;
+            var energy = parsedMass * (Math.Pow(speedOfLight, 2));
+            return energy;
+        }
     }
 }

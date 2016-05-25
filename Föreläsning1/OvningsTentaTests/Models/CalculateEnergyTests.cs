@@ -25,17 +25,30 @@ namespace OvningsTenta.Models.Tests
             //Arrange
             CalculateEnergy calculateEnergy = new CalculateEnergy();
             //Act
-            var expected = calculateEnergy.CalculateMass(2);
-            var actual = 8.987551787368176e+17;
+            var expected = calculateEnergy.CalculateMass("5");
+            var actual = 4.493775893684088e+17;
             //Assert
             Assert.AreEqual(expected, actual);
         }
 
         [Test]
-        public void CalculateEnergy_WrongValue()
+        public void CalculateEnergy_NegativeValue()
         {
-            
-        }
-    }
+            CalculateEnergy calculateEnergy = new CalculateEnergy();
 
+            var expected = calculateEnergy.CalculateMassNegative("-5");
+            var actual = -4.4937758936840883E+17d;
+            Assert.AreEqual(expected, actual);
+        }
+
+        public void CalculateEnergy_UsedStringvalue()
+        {
+            CalculateEnergy calculateEnergyWithString = new CalculateEnergy();
+
+            var expected = calculateEnergyWithString.CalculateMass("5g");
+            var actual = 4.493775893684088e+17;
+            Assert.AreEqual(expected, actual);
+        }
+
+    }
 }

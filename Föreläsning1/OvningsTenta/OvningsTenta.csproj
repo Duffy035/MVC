@@ -172,7 +172,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\Artists2Controller.cs" />
     <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\CreamController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -252,15 +251,9 @@
     <Content Include="Views\Artists\Index.cshtml" />
     <Content Include="Views\Cream\Hands.cshtml" />
     <Content Include="Views\Cream\Facial.cshtml" />
-    <Content Include="Views\Artists2\Create.cshtml" />
-    <Content Include="Views\Artists2\Delete.cshtml" />
-    <Content Include="Views\Artists2\Details.cshtml" />
-    <Content Include="Views\Artists2\Edit.cshtml" />
-    <Content Include="Views\Artists2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Artist2\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

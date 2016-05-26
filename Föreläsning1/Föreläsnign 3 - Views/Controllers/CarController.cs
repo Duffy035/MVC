@@ -25,7 +25,7 @@ namespace Föreläsnign_3___Views.Controllers
 
         public ActionResult ViewDataTransfer()
         {
-            //Vi använder en viewdata och skrivkar til lvår view
+            //Vi använder en viewdata och skickar till vår view
             ViewData["beauty"] = "Det är en häst med skägg...";  //Använder sig av nycklar i form av strängar
             return View();
         }
@@ -35,7 +35,7 @@ namespace Föreläsnign_3___Views.Controllers
         //[ActionName("Lisa")] //dödar min Lisa-view?
         public ActionResult ViewBagTransfer()
         {
-            //En viewbag: som om vi läger till en property på vår klass, och namnger den:
+            //En viewbag: som om vi lägger till en property på vår klass, och namnger den:
             ViewBag.Lisa = "Lisa är en snärta från Märsta";
             return View();
         }
@@ -56,7 +56,7 @@ namespace Föreläsnign_3___Views.Controllers
 
 //Viewbag är en dynamisk property, 
 //-använder dynamic från C# 
-//-kräver inte typecasting för kompexa datatyper. 
+//-kräver inte typecasting för komplexa datatyper. 
 //(Denna är rekommenderad att använda.)
 
 //ViewData är en dictionary, 

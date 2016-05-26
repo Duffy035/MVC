@@ -1,0 +1,9 @@
+﻿@model AjaxTentaTest.Models.Car
+<div>Loaded the partial view for Person with id: @Model.PersonId</div>
+
+@Ajax.ActionLink(linkText:"Hide",
+    actionName:":_HideCreate",
+    ajaxOptions: new AjaxOptions()
+    {
+        UpdateTargetId = "ajaxPartialView"
+    })

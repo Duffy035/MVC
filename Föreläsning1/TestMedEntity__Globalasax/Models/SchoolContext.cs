@@ -10,14 +10,14 @@ namespace TestMedEntity__Globalasax.Models
     {
         public SchoolContext() : base("TestMedEntity__Globalasax")
         {
-            Database.SetInitializer<SchoolContext>(new SchoolInitializer());
+            Database.SetInitializer(new SchoolInitializer());
         }
 
         public DbSet<Student> Students { get; set; }
         public DbSet<Address> Addresses { get; set; }
     }
 
-    public class SchoolInitilaizer : DropCreateDatabaseAlways<SchoolContext>
+    public class SchoolInitializer : DropCreateDatabaseAlways<SchoolContext>
     {
         protected override void Seed(SchoolContext context)
         {

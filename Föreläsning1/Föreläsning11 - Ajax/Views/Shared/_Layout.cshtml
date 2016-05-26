@@ -39,7 +39,7 @@
 
     @Scripts.Render("~/bundles/jquery")   @*//Här anropas vår bundle. dvs. vår javascript, samt vår bundel med ajax. Nu finns de på alla hemsidor som använde sig av _layout*@
         @Scripts.Render("~/bundles/bootstrap")
-        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>  @*//Ngt fel med bundle, den unobtrusive javascriptfilen var inte inluderad på sidan*@
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>  @*//Ngt fel med bundle, den unobtrusive javascriptfilen var inte inkluderad på sidan*@
     @RenderSection("scripts", required: false)
 </body>
 </html>

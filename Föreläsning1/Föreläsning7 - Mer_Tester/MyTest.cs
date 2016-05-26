@@ -17,7 +17,10 @@ namespace Föreläsning7___Mer_Tester
             //Act
             var actual = Goofy.Add(3, 2);
             //Assert
-            Assert.AreEqual(expected, actual);
+
+            //Båda nedan fungerar - den som används körs med NUnit ramverket varav den annorlunda, men mer läsbara, koden.
+            //Assert.AreEqual(expected, actual);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }

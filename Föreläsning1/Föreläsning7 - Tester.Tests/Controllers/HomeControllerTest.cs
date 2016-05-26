@@ -22,9 +22,9 @@ namespace Föreläsning7___Tester.Tests.Controllers
             // Act - I denna ska man utföra själva arbetet - anropa själva metoden
             ViewResult result = controller.Index() as ViewResult;  //Detta är ett resutlat från vyn.
 
-            // Assert - hävdar att det sak stämma, ananrs har vi misslyckats skapa en vy
+            // Assert - hävdar att det ska stämma, annars har vi misslyckats skapa en vy
             Assert.IsNotNull(result);
-            //Assert.IsNotNull(result);  // Detta hade get fel
+            //Assert.IsNotNull(result);  // Detta hade gett fel
         }
 
         [TestMethod]
